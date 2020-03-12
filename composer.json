@@ -31,13 +31,19 @@
         "yiisoft/yii-web": "^3.0@dev",
         "yiisoft/assets": "dev-master",
         "yiisoft/view": "^3.0@dev",
-        "yiisoft/yii-debug": "^3.0@dev"
+        "yiisoft/yii-debug": "dev-update-debug"
     },
     "require-dev": {
         "hiqdev/composer-config-plugin": "^1.0@dev",
         "phpunit/phpunit": "^9.0",
         "phan/phan": "^2.4"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/yiiliveext/yii-debug.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Yiisoft\\Yii\\Debug\\Viewer\\": "src"
